@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Coffee Shop</title>
+</head>
+<body>
+  <main>
+  <form id="orderForm">
+    <fieldset>
+        <legend>Coffee Form</legend>
+        <label>First Name</label>
+        <input type="text" name="name">
+
+        <label>Size:</label>
+        <select name="size">
+          <option value="6">6 oz</option>
+          <option value="12">12 oz</option>
+          <option value="16">16 oz</option>
+          <option value="20">20 oz</option>
+          <option value="32">32 oz</option>
+        </select>
+
+        <label>Milk</label>
+        <select name="milk">
+          <option value="regular"> Regular </option>
+          <option value="almond"> Almond </option>
+          <option value="coconut"> Coconut </option>
+          <option value="none"> None </option>  
+        </select>
+   
+        <label>Hot: </label>
+        <input name="isHot" type="checkbox">
+
+        <label>Drink</label>
+        <select name="drinkType">
+          <option value="latte">Latte</option>
+          <option value="blackCoffee">Black Coffee</option>
+          <option value="coldBrew">Cold Brew</option>
+        </select>
+
+        <button type="submit">Submit </button>
+
+      </fieldset>
+
+  </form>
+
+  <section>
+    <h3> Previous Orders</h3>
+    <ul id="orders">
+
+    </ul>
+  </section>
+</main>
+  <script src="js/app.js"></script>
+</body>
+</html>

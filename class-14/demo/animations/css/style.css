@@ -1,0 +1,185 @@
+* {
+  font-family: sans-serif;
+}
+
+/*TODO: actually do styling and make images side-by-side*/
+
+img {
+  max-width: 40%;
+}
+
+#chart {
+  width: 400;
+  height: 400;
+}
+
+/*transform distorts elements from their original size/shape/position. 'transform' is the property name; it can have different values, like rotate, scale, skew, and translate (like relative positioning, translate moves it to a new place, relative to its old one)*/
+/*
+img:first-child:hover {
+  transform: rotate(30deg);
+}
+
+img:last-child:hover {
+  transform: rotate(330deg);
+}*/
+/*
+img:first-child:hover {
+  transform: scale(1.5);
+}
+
+img:last-child:hover {
+  transform: scale(.5);
+}*/
+
+/*img:first-child:hover {
+  transform: translateX(50px);
+}
+
+img:last-child:hover {
+  transform: translate(-50px, 100px);
+}*/
+
+/*img:first-child:hover {
+  transform: skewX(30deg);
+}
+
+img:last-child:hover {
+  transform: skew(30deg, 30deg);
+}*/
+
+
+/*transitions alter the appearance of an element when the state changes. You use pseudo-selectors to target different states (like :hover :focus :active and :target ).
+there are three major properties to set when you use a transition:
+- transition-property (which property, or properties, you want to transition)
+- transition-duration (how long you the transition to take. this is in seconds, like 2s, or milliseconds, like 350ms)
+- transition-timing-function (how does the rate of change happen over the duration of the transition)*/
+
+.rounding {
+  width: 200px;
+  height: 200px;
+  background-color: #0394e6;
+  border-radius: 0;
+  transition: 2s;
+}
+
+.rounding:hover {
+  transition-property: border-radius, background-color;
+  transition-duration: 2s, 2s;
+  transition-timing-function: linear, linear;
+  border-radius: 50%;
+  background-color: #f03c1d;
+}
+
+.doNothing {
+  background-color: #a570da;
+  opacity: 0.8;
+  outline: 2px solid #ffffff;
+  transition: opacity 100ms linear;
+}
+
+.doNothing:hover {
+  transition-property: opacity;
+  transition-duration: 100ms;
+  transition-timing-function: linear;
+  opacity: 1.0;
+}
+
+.doNothing:active {
+  transition-property: outline;
+  transition-duration: 100ms;
+  transition-timing-function: linear;
+  outline: 2px solid yellow;
+}
+
+
+/*animations alter an element for a given number of iterations. For animations, you need to define:
+- a named animation, using the @keyframes rule, that says where to "start" and where to "end", and (optional) any midpoints in between
+- which element is using the named animation (animation-name)
+- how long the animation should run (animation-duration)
+- how many times to repeat (animation-iteration-count)
+- how it should be timed (animation-timing-function)*/
+
+.animation {
+  background-color: #cccccc;
+  border: 2px solid #bbbbbb;
+  border-radius: 3%;
+  width: 400px;
+  height: 400px;
+}
+
+@keyframes moveRight {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  25% {
+    left: 90%;
+    top: 25%;
+  }
+  50% {
+    left: 0%;
+    top: 50%;
+  }
+  75% {
+    left: 90%;
+    top: 75%;
+  }
+  100% {
+    left: 0%;
+    top: 90%;
+  }
+}
+
+.animationElement {
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-name: moveRight;
+  width: 10%;
+  height: 10%;
+  background-color: #0c8f16;
+  position: relative;
+}
+
+img:first-child {
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-name: moveRight;
+  position: absolute;
+  z-index: 10;
+}
+
+@keyframes blinkAnimation {
+  0% {
+    /*opacity: 1.0;*/
+    color: #000000;
+  }
+  50% {
+    /*opacity: 0;*/
+    color: #ffffff;
+  }
+  100% {
+    /*opacity: 1.0;*/
+    color: #000000;
+  }
+}
+
+.blink {
+  animation-name: blinkAnimation;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(3);
+  animation-duration: 350ms;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*foo*/

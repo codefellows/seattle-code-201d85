@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>A/V Demo</title>
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/audio-video.css">
+</head>
+
+<body>
+  <header>
+    <h1>Audio Video Elements</h1>
+  </header>
+  <main class="grid">
+    <section>
+      <h2>Audio</h2>
+      <audio id="levees" src="assets/audio/levees.m4a" muted controls autoplay></audio>
+      <h3>Common attributes to control playback of audio</h3>
+      <ul>
+        <li>autoplay: Boolean; use sparingly</li>
+        <li>controls: provides playback controls to user</li>
+        <li>loop: Boolean; will play audio over and over</li>
+        <li>muted: Boolean; can use this to mute audio on page load</li>
+        <li>src: link to the audio source file</li>
+        <li>volume: Range of 0.0 (silent) to 1.0 (loudest)</li>
+        <button id="randomizer">Click this button to randomly adjust the volume</button>
+      </ul>
+    </section>
+    <section>
+      <h2>Video</h2>
+      <!-- include width and height of videos to prevent layout shift -->
+      <video id="demi" src="assets/video/demi.mov" width=400 height=220 muted controls></video>
+      <h3>Common attributes to control playback of video.</h3>
+      <ul>
+        <li>autoplay: Boolean; use sparingly</li>
+        <li>controls: provides playback controls to user</li>
+        <li>height: MUST be an absolute value; no percentages!</li>
+        <li>muted: Boolean; can use this to mute audio on page load</li>
+        <li>poster: use an alternate image in place of the first frame before playback has been initialized</li>
+        <li>src: link to the video source file</li>
+        <li>volume: Range of 0.0 (silent) to 1.0 (loudest)</li>
+        <li>width: May be an absolute value or percentages</li>
+      </ul>
+    </section>
+    <script src="js/media.js"></script>
+</body>
+
+</html>

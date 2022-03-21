@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <title>Salmon Cookies</title>
+  </head>
+
+  <body>
+<nav>
+    <h1>Fishy Cookies with More Bugs</h1>
+  <div id="navBlock">
+    <ul id=>
+      <li class="nav"><a href ="index.html">Home</a></li>
+      <li class="nav"><a href ="data.html">Data</a></li>
+      <li class="nav"><a href ="about.html">About</a></li>
+      <li class="nav"><a href ="locations.html">Locations</a></li>
+    </ul>
+  </div>
+</nav>
+
+<form id="storeForm">
+  <fieldset>
+    <legend>Add new store location</legend>
+
+    <label for="name">Location: </label>
+    <input name="name" type="text" required/>
+
+    <label for="minCustomers">Minimum Customers: </label>
+    <input name="minCustomers" type="number" step="any" min="0" required/>
+
+    <label for="maxCustomers">Maximum Customers: </label>
+    <input name="maxCustomers" type="number" step="any" min="0" required/>
+
+    <label for="aveCookies">Average Cookies per Person: </label>
+    <input name="aveCookies" type="number" step="any" min="0" required/>
+
+    <button type="submit">Open new Business!</button>
+</fieldset>
+</form>
+
+
+<div id="tableScroll">
+<table id="standsTable"></table>
+</div>
+<script href="app.js">
+    
+  </script>
+  </body>
+</html>

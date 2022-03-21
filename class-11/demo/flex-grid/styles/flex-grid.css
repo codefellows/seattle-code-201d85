@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+
+main {
+  width: 80%;
+  margin: 3rem auto;
+}
+
+
+/* Refer to CSS-Grid-Layout.png in whiteboard-diagrams folder. This is the start code for that
+
+For 2nd step (to make the 2 row version in Flex): Add inline commented out code in LAYOUT IN FLEX section below (and the extra row of divs in index.html) to try to make the layout in flexbox. 
+
+For 3rd step (to make the 5 row version in Flex): just explain how setting the height on ".container div" isn't enough we'd need selectors that work row by row. This will take a lot more code. (no example code is provided for this)
+
+For 4th step (to make the layout in Grid): Comment out the entire LAYOUT IN FLEX section and refer to LAYOUT IN GRID section. Add more child divs inside ".container" in index.html
+
+*/
+
+/*-------- LAYOUT IN FLEX: --------*/
+
+.container {
+  border: 1px solid black;
+  display: flex;
+  /* for 2nd step: */
+  /* flex-wrap: wrap; */
+}
+
+.container div {
+  background-color: lightgray;
+  margin: .5rem;
+  border: 1px solid black;
+  flex: 1 1 20%;
+  /* for 2nd step: */
+  /* height: 7rem; */
+}
+
+/* for 2nd step: change selector to:
+div:nth-child(4n + 2)  */
+div:nth-child(2) {
+  flex: 0 1 10%;
+  background-color: lightgreen;
+}
+
+/* for 2nd step: change selector to:
+div:nth-child(4n)  */
+div:nth-child(4) {
+  flex: 3 0 40%;
+  background-color: skyblue;
+}
+
+/*-------- LAYOUT IN GRID: --------*/
+/* 
+.container {
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: 1fr 10% 1fr 40%;
+  grid-template-rows: 14rem 3rem 6rem 6rem 6rem;
+}
+
+.container div {
+  background-color: lightgray;
+  margin: .5rem;
+  border: 1px solid black;
+}
+
+div:nth-child(4n + 2) {
+  background-color: lightgreen;
+}
+div:nth-child(4n) {
+  background-color: skyblue;
+} */

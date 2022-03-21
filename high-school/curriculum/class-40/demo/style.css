@@ -1,0 +1,8 @@
+section {
+  margin: 50px; /* box model prop - does not change the size of an element - adds space to the outside of it */
+  padding: 50px; /* box model prop - DOES change the size of an element - ie: "balloons" an element - adds space to the inside of it */
+  text-align: center;
+  border: dotted 1px green; /* box model prop - changes the size of the element and sits on it's "edge" */
+  background: black;
+  color: white;
+} 

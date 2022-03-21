@@ -1,0 +1,47 @@
+#container {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  background: orange;
+}
+
+.child {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+
+#top-left {
+  background: red;
+  top: 0;
+  left: 0;
+}
+
+#top-right {
+  background: green;
+  top: 0;
+  right: 0;
+}
+
+#bottom-left {
+  background: purple;
+  bottom: 0;
+  left: 0;
+}
+
+#bottom-right {
+  background: black;
+  bottom: 0;
+  right: 0;
+}
+
+/* REFERENCE HTML:
+
+<section id="container">
+  <div id="top-left" class="child"></div>
+  <div id="top-right" class="child"></div>
+  <div id="bottom-left" class="child"></div>
+  <div id="bottom-right" class="child"></div>
+</section>
+
+*/

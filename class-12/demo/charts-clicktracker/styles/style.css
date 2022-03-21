@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: cornsilk;
+  color: saddlebrown;
+}
+
+main {
+  width: 1024px;
+  margin: 3rem auto;
+  display: grid;
+  grid-template-columns: 250px 4fr;
+  grid-template-rows: 6.5rem 10rem 20rem 40%;
+}
+
+#siteLogo {
+  width: 250px;
+  z-index: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 3
+}
+
+h1 {
+  font-size: 5rem;
+  color: rosybrown;
+  line-height: .8;
+  margin: 3rem 0 1rem;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+section {
+  /* This element will be a grid item, but also a flex container */
+  background-color: rgba(211, 187, 176, 0.3);
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between; 
+  align-items: flex-start; 
+}
+
+/* -- goat images --*/
+section img {
+  width: 460px;
+  max-height: 26rem;
+  /*-- aide accessiblity by preventing layout shift 
+  by adding a transparent border when a border is 
+  added in :hover styles --*/
+  border: 5px solid transparent;
+}
+/*-- add hover states so the user can tell what 
+behavior is expected of them--*/
+section img:hover {
+  border: 5px solid rosybrown;
+  cursor: pointer;
+}
+/* once voting ends */
+section.no-voting img:hover {
+  border: 5px solid transparent;
+  cursor: none;
+}
+
+
+/*-- chart css--*/
+section + div {
+  padding: 2rem;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}

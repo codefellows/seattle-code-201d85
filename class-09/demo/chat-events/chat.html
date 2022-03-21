@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ <head>
+  <meta charset="UTF-8">
+  <title>Homegrown Slack</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+ </head>
+
+ <body>
+
+  <h1>Note: Your possible users are Benton, Dan, Jonny, Katie, Sam, Nick, and Otis.</h1>
+
+  <form id="chat-form">
+    <fieldset>
+      <legend>Chat submission form</legend>
+
+      <label for="who">Who: </label>
+      <input name="who" type="text" />
+
+      <label for="says">Comment: </label>
+      <input name="says" type="text" size="50" />
+
+      <button id="comment-button" type="submit">Create new comment!</button>
+    </fieldset>
+  </form>
+
+  <button id="clear-chat-list">Clear all comments!</button>
+
+  <ul id="chat-list"></ul>
+
+  <script src="chat.js"></script>
+ </body>
+</html>

@@ -1,0 +1,164 @@
+* {
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+/*box-sizing*/
+/*Right now, if we set the width of an element, it will only set width of the content; the padding and border widths will be added to the content width. That doesn't play well with grids. we can change the behavior of boxes so width includes the padding and margin.*/
+footer p {
+  box-sizing: border-box;
+  width: 200px;
+  padding: 20px;
+  border: 50px solid black;
+}
+
+/*pseudo-selectors*/
+/*pseudo-selectors don't select actual elements. Instead, they select certain parts of elements, or elements when they're in a certain state. There are two types of pseudo-selectors: pseudo-elements, and pseudo-classes.*/
+
+/*- pseudo-classes: */
+/*Pseudo-classes select an element only when it's in a certain state: perhaps it's a link that's being hovered over, or the first li in a list.*/
+
+a {
+  color: orange;
+}
+
+a:hover {
+  color: green;
+}
+
+a::after {
+  content: " (opens in new window)";
+}
+
+input:focus {
+  background-color: #f4f699;
+  outline-color: orange;
+}
+
+/*style odd articles with one background color*/
+#kittenProfiles article:nth-of-type(2n+1) {
+  background-color: #bbbbbb;
+}
+
+/*style even articles with one background color*/
+#kittenProfiles article:nth-of-type(3n+2) {
+  background-color: #eeeeee;
+}
+
+#kittenProfiles article:nth-of-type(3n) {
+  background-color: #777777;
+}
+
+/*pseudo-elements*/
+/*pseudo-elements are keywords that can be added to the end of a selector to select a certain part of an element.*/
+
+footer p::first-line {
+  font-weight: bold;
+}
+
+footer p::first-letter {
+  font-size: 72px;
+}
+
+/*the clearfix*/
+/*make an element clear it's own children!*/
+/*fieldset::after {*/
+  /*content: "i don't exist";*/
+  /*content: "";
+  display: table;
+  clear: both;
+}*/
+
+/*this is a class that we have to put on the element we want to clear*/
+.clearfix {
+  clear: both;
+}
+
+/*percents for widths*/
+main p {
+  width: 50%;
+}
+
+/*implement our grid*/
+
+.row,
+.column {
+  box-sizing: border-box;
+}
+
+.row::before,
+.row::after {
+  content: "";
+  display: table;
+}
+
+.row::after {
+  clear:both;
+}
+
+.column {
+  position: relative;
+  float: left;
+}
+
+/*one column is 8.33% wide*/
+
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 24.98%;
+}
+
+.col-4 {
+  width: 33.32%
+}
+
+.col-5 {
+  width: 41.65%
+}
+
+.col-6 {
+  width: 49.98%
+}
+
+.col-7 {
+  width: 58.3%
+}
+
+.col-8 {
+  width: 66.66%
+}
+
+.col-9 {
+  width: 74.97%
+}
+
+.col-10 {
+  width: 83.3%
+}
+
+.col-11 {
+  width: 91.66%
+}
+
+.col-12 {
+  width: 100%
+}
+
+fieldset {
+  margin: 0;
+}
+
+fieldset:first-child label {
+  display: block;
+}
+
+/*foo*/

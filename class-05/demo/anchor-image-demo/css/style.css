@@ -1,0 +1,25 @@
+@import url(https://fonts.googleapis.com/css?family=Just+Another+Hand|Wire+One|Tulpen+One|Eczar);
+
+
+
+/*font-family: 'Wire One', sans-serif;
+
+font-family: 'Tulpen One', cursive;
+
+font-family: 'Eczar', serif;*/
+
+
+body {
+  background-color: #ff7a7a;
+  font-family: 'Just Another Hand', cursive;
+}
+
+p {
+  font-family: 'Tulpen One', cursive;
+  color: blue;
+}
+
+
+#preface h1 {
+  font-family: 'Eczar', serif;
+}

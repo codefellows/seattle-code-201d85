@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+    crossorigin="anonymous" />
+
+  <style>
+    body {
+      background-color: bisque;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    header {
+      text-align: center;
+      padding: 50px;
+    }
+
+    li {
+      display: inline;
+      margin: 0 20px;
+    }
+
+    h1 {
+      font-size: xx-large;
+      margin-bottom: 10px;
+    }
+
+    section {
+      background-color: seashell;
+      display: block;
+      padding: 50px;
+      width: 50%;
+      margin: 20px auto;
+      display: block;
+      position: relative;
+      height: 200px;
+    }
+
+    #static {
+      position: static;
+      top: 0px;
+    }
+
+    #relative {
+      position: relative;
+      top: 0px;
+      left: 50px;
+
+    }
+
+    #absolute {
+      position: absolute;
+      top: 0px;
+      left: 50px;
+    }
+
+    #fixed {
+      position: fixed;
+      top: 0px;
+      right: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Positions Please!</h1>
+    <nav>
+      <ul>
+
+        <li><a href="https://css-tricks.com/almanac/properties/p/position/">CSS Tricks - Position</a></li>
+
+        |
+
+        <li><a href="break-the-gridlock.html">Break the Gridlock</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <img src="https://via.placeholder.com/200x200/ff7f7f/333333?text=static" />
+  </section>
+  <section>
+    <img id="relative" src="https://via.placeholder.com/200x200/ff7f7f/333333?text=relative" />
+  </section>
+  <section>
+    <img id="absolute" src="https://via.placeholder.com/200x200/ff7f7f/333333?text=absolute" />
+  </section>
+  <section>
+    <img id="fixed" src="https://via.placeholder.com/200x200/ff7f7f/333333?text=fixed" />
+  </section>
+</body>
+
+</html>

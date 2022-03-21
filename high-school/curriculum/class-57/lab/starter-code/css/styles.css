@@ -1,0 +1,13 @@
+* {
+  color: salmon;
+  font-family: 'Helvetica', sans-serif;
+  /*outline: 1px dotted green;*/
+}
+
+li {
+  color: #777;
+}
+
+h1, h2 {
+  font-family: 'Righteous', cursive;
+}

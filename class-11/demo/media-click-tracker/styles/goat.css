@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: cornsilk;
+  color: saddlebrown;
+}
+
+main {
+  width: 1024px;
+  margin: 3rem auto;
+  display: grid;
+  grid-template-columns: 250px 4fr;
+  grid-template-rows: 6.5rem 10rem 20rem 40%;
+}
+
+#siteLogo {
+  width: 250px;
+  z-index: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 3
+}
+
+h1 {
+  font-size: 5rem;
+  color: rosybrown;
+  line-height: .8;
+  margin: 3rem 0 1rem;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+section {
+  /* This element will be a grid item, but also a flex container */
+  background-color: rgba(211, 187, 176, 0.3);
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between; 
+  align-items: flex-start; 
+}
+
+/* -- goat images --*/
+section img {
+  width: 460px;
+  max-height: 26rem;
+  /*-- aide accessiblity by preventing layout shift 
+  by adding a transparent border when a border is 
+  added in :hover styles --*/
+  border: 5px solid transparent;
+}
+/*-- add hover states so the user can tell what 
+behavior is expected of them--*/
+section img:hover {
+  border: 5px solid rosybrown;
+  cursor: pointer;
+}
+/* once voting ends */
+section.no-voting img:hover {
+  border: 5px solid transparent;
+  cursor: none;
+}
+
+/* -- results list -- */
+ul {
+  margin: 1rem;
+}
+li {
+  margin: .5rem;
+}
+
+/* -- button -- */
+section + div {
+  background-color: darkgray;
+  color: lightgrey;
+  padding: .5rem 1rem;
+  width: max-content;
+  height: max-content;
+  font-size: .8rem;
+  margin: 1rem;
+
+  /* —— Demo stretch goal —— */
+  /* This code improves the UX. Making it clear what the user should 
+  do once the voting cycle ends. Do not demo this unless you do the 
+  below 'section + div.clicks-allowed' code as well. The class  
+  'clicks-allowed' must be added to the element via the JavaScript. */
+
+  pointer-events: none;
+}
+/* Demo stretch goal: */
+section + div.clicks-allowed {
+  background-color: rosybrown;
+  color: white;
+  cursor: pointer;
+  pointer-events: auto;
+}
+section + div.clicks-allowed:hover {
+  background-color: rgb(211, 187, 175)
+}

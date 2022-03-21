@@ -1,0 +1,72 @@
+@import url(https://fonts.googleapis.com/css?family=Just+Another+Hand|Wire+One|Tulpen+One|Eczar);
+
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  /* font-family: 'Just Another Hand', sans-serif; */
+  /* font-family: 'Tulpen One', sans-serif; */
+  font-family: 'Wire One', sans-serif;
+  /* font-family: 'Eczar', sans-serif; */
+  background-color: bisque;
+  font-size: 48px;
+  text-align: center;
+}
+
+main {
+  width: 70%;
+  margin: 0 auto;
+}
+
+
+h1 {
+  font-size: 72px;
+  margin-left: 50px;
+}
+
+
+section {
+  background-color: rgb(76, 141, 76);
+  margin: 20px auto;
+}
+
+li {
+  display: inline;
+}
+
+img {
+  border: 5px solid rgb(235, 77, 77);
+}
+
+.floaty img {
+  float: left;
+  padding: 25px;
+}
+
+.floaty:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.col-4 img {
+  width: 25%;
+}
+
+.col-2 img {
+  width: 50%;
+}
+
+.flexy {
+  display: flex;
+}
+
+.flexy img {
+  flex: 1;
+  min-width: 0;
+  padding: 25px;
+}

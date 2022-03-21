@@ -1,0 +1,14 @@
+* {
+  font-family: sans-serif;
+}
+
+/*TODO: actually do styling and make images side-by-side*/
+
+img {
+  max-width: 40%;
+}
+
+#chart {
+  width: 400;
+  height: 400;
+}

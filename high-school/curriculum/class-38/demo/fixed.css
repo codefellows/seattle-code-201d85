@@ -1,0 +1,35 @@
+header {
+  position: fixed;
+  background: black;
+  height: 100px;
+  width: 100%;
+}
+
+h1 {
+  color: white;
+  margin-top: 25px;
+  text-align: center;
+}
+
+p {
+  padding-top: 125px;
+  min-height: 800px;
+}
+
+img {
+  position: fixed;
+  left: 0;
+  top: 200px;
+}
+
+/* HTML REFERENCE
+
+<header>
+  <h1>Cool Company Name</h1>
+</header>
+
+<p>lots of lorem ipsum...</p>
+
+<img class="fixed-img" src="http://placehold.it/200x200">
+
+*/

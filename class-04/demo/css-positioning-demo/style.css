@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 1rem
+}
+
+h2 {
+  font-weight: bold;
+}
+
+section {
+  border: 15px solid red;
+  width: 80%;
+  margin: 5rem auto 0 auto;
+  height: 40rem;
+  position: static;
+}
+
+article {
+  border: medium solid black;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+#one {
+  left: 100px;
+  width: 20%;
+  position: relative;
+  background-color: linen;
+}
+
+#two {
+  right: 0;
+  top: 4rem;
+  width: 50%;
+  position: absolute;
+  background-color: lavenderblush;
+}
+
+#three {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+  margin: 0;
+  background-color: beige
+}
+
+#four {
+  bottom: 0;
+  position: absolute;
+  margin: 0;
+  background-color: lightcyan;
+}
