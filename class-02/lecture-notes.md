@@ -60,3 +60,26 @@ cat = false;
 
 - Something that has been defined as none
   - `let cat = null;`
+
+## Comparison Operators
+
+- `==` 'loose equality'...value must be the same, but type can be different
+  - `6 == '6' // evaluates to true`
+- `===` 'strict equality'...value and type must be the same
+  - `6 == '6' // evaluates to false` but...
+  - `6 === 6 // evaluates to true`
+- `!=` 'loose inequality'
+  - `6 != '6' // evaluates as false`
+  - `6 != 'a' // evaluates as true`
+- `!==` 'strict inequality'
+  - `6 !== '6' // evaluates as true`
+  - `6 !== 6 // evaluates as false`
+- `>` greater than; `<` less than
+- `>=` greater than or equal to; `<=` less than or equal to
+
+## Logical Operators
+
+- `&&` and;
+- `||` or;
+- `!` not, also refered to as the bang symbol. Gives you the opposite of whatever it is placed in front of
+  - `!true` this will equate to false
