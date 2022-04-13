@@ -1,24 +1,51 @@
 body {
-    font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
-    font-size: 3em;
-    text-align: center;
-    margin-bottom: 20px;
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 #container {
-    background-color: #003049;
-    width: 90%;
-    height: 500px;
-    margin: 0 auto;
-    border: 5px solid #003049;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #003049;
+  width: 90%;
+  height: 500px;
+  margin: 0 auto;
+  /* border: 5px solid mediumseagreen; */
 
 }
 
 #container div {
-    width: 200px;
-    height: 200px
+  width: 200px;
+  height: 200px;
 }
 
+#container div:nth-of-type(3) {
+  align-self: flex-start;
+}
+
+#container div:nth-of-type(4) {
+  align-self: flex-end;
+}
+
+nav {
+  background-color: lightgray;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  justify-content: space-evenly;
+}
