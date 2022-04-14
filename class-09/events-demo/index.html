@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events Demo</title>
+</head>
+
+<body>
+  <button id="btn-1">Click Me!</button>
+  <button id="btn-2">Click Me!</button>
+
+  <form id="my-form">
+    <fieldset>
+      <legend>User Form</legend>
+      <label for="location">User Name</label>
+      <input type="text" name="userName" id="user-name">
+      <label for="user-age">User Age</label>
+      <input type="number" name="age" id="user-age">
+      <button>Submit</button>
+    </fieldset>
+  </form>
+
+  <form id="cookie-stand-form">
+    <fieldset>
+      <legend>Create Cookie Stand</legend>
+      <label for="location">Location</label>
+      <input type="text" name="location" required>
+
+      <label for="minCustomers">Minimum Customers Per Hour</label>
+      <input type="number" name="minCustomers" required>
+
+      <label for="maxCustomers">Maximum Customers Per Hour</label>
+      <input type="number" name="maxCustomers" required>
+
+      <label for="avgCookies">Average Cookies Per Customer</label>
+      <input type="number" name="avgCookies" step="0.1" required>
+
+      <button>Submit</button>
+    </fieldset>
+
+
+  </form>
+  <div class="container">
+
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
