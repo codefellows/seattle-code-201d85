@@ -1,5 +1,9 @@
 # Audio/Video, Practical Info, and Getting the Vote Tracker Started
 
+## IN CLASS NOTES AND TAKEAWAYS
+
+[Array Methods Replit](https://replit.com/@arpatterson31/Class201d85-ARRAY-METHODS#index.js)
+
 ## Overview
 
 This class will be the start of a new project. You will also be learning a new CSS layout with grid.
