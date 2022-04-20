@@ -1,0 +1,51 @@
+body {
+  background-color: #bde0fe;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3em;
+  padding: 30px;
+  text-decoration: underline;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-auto-rows: minmax(200px, 300px);
+}
+
+img {
+  width: 300px;
+  border: 1px solid black;
+}
+
+#container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+
+}
+
+#chart-container {
+  width: 700px;
+  height: 700px;
+}
+
+#show-results-btn {
+  width: max-content;
+  margin: auto;
+  margin-top: 100px;
+  border: 2px solid #ffafcc;
+  padding:10px;
+  border-radius: 5px;
+  background: #ffc8dd;
+}
+
+#display-results {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.5em;
+  line-height: 150%;
+}
